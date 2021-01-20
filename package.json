@@ -1,0 +1,31 @@
+{
+  "name": "metadsl",
+  "version": "1.0.0",
+  "description": "一组业务设计模型，以便快速、易懂、专业的进行业务元数据建模",
+  "main": "index.js",
+  "scripts": {
+    "js": "java org.antlr.v4.Tool -Dlanguage=JavaScript ./metadsl.g4 -o ./js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saas-plat/metadsl.git"
+  },
+  "keywords": [
+    "metadata",
+    "dsl",
+    "model",
+    "design"
+  ],
+  "author": "saas-plat.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saas-plat/metadsl/issues"
+  },
+  "homepage": "https://github.com/saas-plat/metadsl#readme",
+  "devDependencies": {
+    "antlr4": "^4.9.1",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}
